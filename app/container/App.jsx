@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 import './App.css'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.Numbers = [ 1, 2, 3, 4, 5 ]
+  }
+
   render() {
     return (
       <div className="container">
@@ -16,12 +21,7 @@ class App extends Component {
             </thead>
             <tbody>
               <tr>
-                <td>1</td>
-                <td>Hamid</td>
-                <td>address 1</td>
-              </tr>
-              <tr className="success">
-                <td>2</td>
+                <td>Number</td>
                 <td>Hamid</td>
                 <td>address 1</td>
               </tr>
